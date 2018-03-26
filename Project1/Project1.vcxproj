@@ -115,7 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="c++.cpp" />
     <ClCompile Include="c++作业02.cpp" />
     <ClCompile Include="L_2-16.cpp" />
     <ClCompile Include="L_2-17.cpp" />
