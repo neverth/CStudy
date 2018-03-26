@@ -124,6 +124,8 @@
     <ClCompile Include="L_2-1.cpp" />
     <ClCompile Include="L_2-2.1.cpp" />
     <ClCompile Include="c++作业01.cpp" />
+    <ClCompile Include="L_4-2.cpp" />
+    <ClCompile Include="this指针理解.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="L_2-15.cpp" />
