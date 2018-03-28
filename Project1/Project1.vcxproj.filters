@@ -48,6 +48,12 @@
     <ClCompile Include="this指针理解.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="运算符重载_4-1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="模板_5-3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="L_2-15.cpp">

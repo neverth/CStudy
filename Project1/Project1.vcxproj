@@ -126,6 +126,8 @@
     <ClCompile Include="c++作业01.cpp" />
     <ClCompile Include="L_4-2.cpp" />
     <ClCompile Include="this指针理解.cpp" />
+    <ClCompile Include="模板_5-3.cpp" />
+    <ClCompile Include="运算符重载_4-1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="L_2-15.cpp" />
