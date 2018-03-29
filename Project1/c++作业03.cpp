@@ -27,7 +27,7 @@
 //	Point(float t_x = 0, float t_y = 0)
 //		:x(t_x), y(t_y) {}//构造函数
 //	~Point() {}	  //析构函数
-//	float distance(Point t_d1, Point t_d2);
+//	float distance(Point &t_d1, Point &t_d2);
 //	friend ostream &operator<< (ostream &os, const Point &d);//<< 运算符重载
 //	friend istream &operator>> (istream &is, Point &d);// >> 运算符重载
 //};
@@ -42,7 +42,7 @@
 //	is >> d.y;
 //	return is;
 //}
-//float Point::distance(Point t_d1, Point t_d2) {
+//float Point::distance(Point &t_d1, Point &t_d2) {
 //	return sqrt((t_d1.x - t_d2.x)*(t_d1.x - t_d2.x) + (t_d1.y - t_d2.y)*(t_d1.y - t_d2.y));
 //}
 //
