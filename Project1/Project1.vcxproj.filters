@@ -54,6 +54,9 @@
     <ClCompile Include="模板_5-3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="c++作业03.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="L_2-15.cpp">
