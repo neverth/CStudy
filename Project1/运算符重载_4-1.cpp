@@ -1,4 +1,4 @@
-////类对象的四则运算
+//类对象的四则运算
 //#include <iostream>
 //using namespace std;
 //class A {
