@@ -1,4 +1,5 @@
-/////*类型转换函数*/
+//
+/////*类型转换函数,*/
 //#include <iostream>
 //using namespace std;
 //class Swap {
