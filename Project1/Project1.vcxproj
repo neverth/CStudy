@@ -28,7 +28,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -129,13 +129,16 @@
     <ClCompile Include="L_4-2.cpp" />
     <ClCompile Include="this指针理解.cpp" />
     <ClCompile Include="模板_5-3.cpp" />
+    <ClCompile Include="运算符重载_4-7.cpp" />
     <ClCompile Include="运算符重载_4-2.1.cpp" />
     <ClCompile Include="运算符重载_4-2.cpp" />
     <ClCompile Include="运算符重载_4-1.cpp" />
     <ClCompile Include="运算符重载_4-3.cpp" />
     <ClCompile Include="运算符重载_4-4.cpp" />
     <ClCompile Include="运算符重载_4-5.cpp" />
+    <ClCompile Include="运算符重载_4-6.1.cpp" />
     <ClCompile Include="运算符重载_4-6.cpp" />
+    <ClCompile Include="运算符重载_4-8.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="L_2-15.cpp" />
