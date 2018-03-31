@@ -139,6 +139,7 @@
     <ClCompile Include="运算符重载_4-6.1.cpp" />
     <ClCompile Include="运算符重载_4-6.cpp" />
     <ClCompile Include="运算符重载_4-8.cpp" />
+    <ClCompile Include="运算符重载总结.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="L_2-15.cpp" />
