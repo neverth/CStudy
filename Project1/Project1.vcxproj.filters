@@ -93,6 +93,15 @@
     <ClCompile Include="IO流_6-8.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="IO流_6-9.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IO流_6-10.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="源.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="L_2-15.cpp">
