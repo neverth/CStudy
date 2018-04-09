@@ -118,6 +118,7 @@
     <ClCompile Include="c++作业02.cpp" />
     <ClCompile Include="c++作业03.cpp" />
     <ClCompile Include="c++作业04.cpp" />
+    <ClCompile Include="c++作业05.cpp" />
     <ClCompile Include="IO流_6-10.cpp" />
     <ClCompile Include="IO流_6-1.cpp" />
     <ClCompile Include="IO流_6-11.cpp" />
