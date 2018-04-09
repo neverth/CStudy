@@ -56,9 +56,28 @@
 //
 ////更深入的理解
 //#include<iostream>
+//#include <string>
 //using namespace std;
 //static int arr[10];//用于存储this指针的int数值
 //static int num = 0;//用于计算this指针创建的数目,全局静态变量
+//class Date {
+//private:
+//	string *name;
+//	int year;
+//	int month;
+//	int day;
+//public:
+//	Date(string t_name = "请命名", int t_year = 0, int t_month = 0, int t_day = 0);
+//	Date(Date &t_stu);
+//	~Date();
+//	void show();
+//	Date getDate();
+//};
+//Date::Date(string t_name, int t_year, int t_month, int t_day) :
+//		name(&t_name), year(t_year), month(t_month), day(t_day){}
+//Date::Date(Date &t_stu) {
+//	name = new string();
+//}
 //class Student {
 //private:
 //	int number;
