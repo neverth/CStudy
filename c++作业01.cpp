@@ -1,49 +1,49 @@
-///*用C++语法，改写一个完整的求一元二次方程的根的程序。
-//
-//要求输入a, b, c三个参数，根据参数判断并输出相应的根的情况。*/
-//#include <iostream>
-//#include <string>
-//#include <cmath>
-//using namespace std;
-//int main() {
-//	string value, a, b, c;
-//	int i;
-//	float d;
-//	cout << "\t【一元二次方程求根】\n" << endl;
-//	cout << "请输入一元二次方程的一般表达式，例（6x^2-5.55x-9.99=0，请勿输入空格且必须写常数项）" << endl;
-//	cin >> value;
-//	cout << "你输入的方程为: " << value << endl;
-//	for (i = 0; i < size(value); i++) {
-//		if (value[i] == 'x')
-//			break;
-//		a += value[i];
-//	}
-//	for (; i < size(value); i++) {
-//		if (value[i + 3] == 'x')
-//			break;
-//		b += value[i + 3];
-//	}
-//	for (; i < size(value); i++) {
-//		if (value[i + 4] == '=')
-//			break;
-//		c += value[i + 4];
-//	}
-//	if (a == "" ||a == "-"||a == "+")
-//		a = (a == "") ? a = "1" : a = "-1";
-//	if (b == "+" ||b == "-")
-//		b = (b == "+") ? b = "1" : b = "-1";
-//	cout << " a 的值为 " << atof(a.c_str()) << endl;//atol是std函数库中的函数，作用是把char*转化为float
-//	cout << " b 的值为 " << atof(b.c_str()) << endl;//在此例中为string -> char * -> float
-//	cout << " c 的值为 " << atof(c.c_str()) << endl;
-//	d = atof(b.c_str()) * atof(b.c_str()) - 4 * atof(a.c_str())*atof(c.c_str());
-//	if (d < 0)
-//		cout << "该方程没有实数根" << endl;
-//	if (d == 0)
-//		cout << "该方程有且只有一个根，其值为 " << (-atof(b.c_str())) / (2 * atof(a.c_str())) << endl;
-//	if (d > 0) {
-//		cout << "该方程有两个根，分别为 x1 = " << (-atof(b.c_str()) + sqrt(d)) / (2 * atof(a.c_str()))
-//			<< "\tx2 = " << (-atof(b.c_str())*atof(b.c_str()) - sqrt(d)) / (2 * atof(a.c_str())) << endl;
-//	}
-//	system("pause");
-//	return 0;
-//}
+/*脫脙C++脫茂路篓拢卢赂脛脨麓脪禄赂枚脥锚脮没碌脛脟贸脪禄脭陋露镁麓脦路陆鲁脤碌脛赂霉碌脛鲁脤脨貌隆拢
+
+脪陋脟贸脢盲脠毛a, b, c脠媒赂枚虏脦脢媒拢卢赂霉戮脻虏脦脢媒脜脨露脧虏垄脢盲鲁枚脧脿脫娄碌脛赂霉碌脛脟茅驴枚隆拢*/
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+int main() {
+	string value, a, b, c;
+	int i;
+	float d;
+	cout << "\t隆戮脪禄脭陋露镁麓脦路陆鲁脤脟贸赂霉隆驴\n" << endl;
+	cout << "脟毛脢盲脠毛脪禄脭陋露镁麓脦路陆鲁脤碌脛脪禄掳茫卤铆麓茂脢陆拢卢脌媒拢篓6x^2-5.55x-9.99=0拢卢脟毛脦冒脢盲脠毛驴脮赂帽脟脪卤脴脨毛脨麓鲁拢脢媒脧卯拢漏" << endl;
+	cin >> value;
+	cout << "脛茫脢盲脠毛碌脛路陆鲁脤脦陋: " << value << endl;
+	for (i = 0; i < size(value); i++) {
+		if (value[i] == 'x')
+			break;
+		a += value[i];
+	}
+	for (; i < size(value); i++) {
+		if (value[i + 3] == 'x')
+			break;
+		b += value[i + 3];
+	}
+	for (; i < size(value); i++) {
+		if (value[i + 4] == '=')
+			break;
+		c += value[i + 4];
+	}
+	if (a == "" ||a == "-"||a == "+")
+		a = (a == "") ? a = "1" : a = "-1";
+	if (b == "+" ||b == "-")
+		b = (b == "+") ? b = "1" : b = "-1";
+	cout << " a 碌脛脰碌脦陋 " << atof(a.c_str()) << endl;//atol脢脟std潞炉脢媒驴芒脰脨碌脛潞炉脢媒拢卢脳梅脫脙脢脟掳脩char*脳陋禄炉脦陋float
+	cout << " b 碌脛脰碌脦陋 " << atof(b.c_str()) << endl;//脭脷麓脣脌媒脰脨脦陋string -> char * -> float
+	cout << " c 碌脛脰碌脦陋 " << atof(c.c_str()) << endl;
+	d = atof(b.c_str()) * atof(b.c_str()) - 4 * atof(a.c_str())*atof(c.c_str());
+	if (d < 0)
+		cout << "赂脙路陆鲁脤脙禄脫脨脢碌脢媒赂霉" << endl;
+	if (d == 0)
+		cout << "赂脙路陆鲁脤脫脨脟脪脰禄脫脨脪禄赂枚赂霉拢卢脝盲脰碌脦陋 " << (-atof(b.c_str())) / (2 * atof(a.c_str())) << endl;
+	if (d > 0) {
+		cout << "赂脙路陆鲁脤脫脨脕陆赂枚赂霉拢卢路脰卤冒脦陋 x1 = " << (-atof(b.c_str()) + sqrt(d)) / (2 * atof(a.c_str()))
+			<< "\tx2 = " << (-atof(b.c_str())*atof(b.c_str()) - sqrt(d)) / (2 * atof(a.c_str())) << endl;
+	}
+	system("pause");
+	return 0;
+}
