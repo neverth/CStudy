@@ -17,8 +17,6 @@ public:
 	void show();
 	Date operator++();
 	Date operator++(int);
-	friend Date operator+ (const Date& t_day1, const int& t_day2);
-	friend Date operator+ (const Date& t_day1, const Date& t_day2);
 	~Date();
 };
 //¶¨ÒåÇø
@@ -114,19 +112,21 @@ Date Date::operator++() {
 Date Date::operator++(int) {
 	Date date = *this;
 	++(*this);
-	return *this;
+	return date;
 }
 Date::~Date() {}
-int main() {
-	Date day1;
-	day1.show();
-	Date day2(31,12,2018);
-	day2++;
-	day2.show();
-	Date day3(28, 2 ,1999);
-	(++day3).show();
-	system("pause");
-	return 0;
-}
+	int main() {
+		Date day1;
+		day1.show();
+		Date day2(31, 12, 2018);
+		day2++;
+		day2.show();
+		Date day3(28, 2, 1999);
+		(++day3).show();
+		Date day4(28, 2, 1999);
+		(day4++).show();
+		system("pause");
+		return 0;
+	}
 
 
