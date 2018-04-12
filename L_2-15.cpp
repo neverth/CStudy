@@ -1,4 +1,4 @@
-//浅拷贝
+//深拷贝
 #include<iostream>
 #include<cstring>
 using namespace std;
