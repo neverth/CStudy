@@ -1,8 +1,8 @@
 /*
-*¶¨ÒåÒ»¸öÂú×ãÈçÏÂÒªÇóµÄDateÀà¡£Ìá¹©¶àÑù»¯¹¹Ôìº¯Êı¼°Îö¹¹º¯Êı£¬²¢Íê³É ÒÔÏÂ¹¦ÄÜº¯Êı
-*1£®ÓÃÏÂÃæµÄ¸ñÊ½Êä³öÈÕÆÚ£º ÈÕ / ÔÂ / Äê
-*2£® ¿ÉÔËĞĞÔÚµ±Ç°ÈÕÉÏ¼ÓÒ»Ìì²Ù×÷
-*3£® ÉèÖÃÈÕÆÚ¡£
+*å®šä¹‰ä¸€ä¸ªæ»¡è¶³å¦‚ä¸‹è¦æ±‚çš„Dateç±»ã€‚æä¾›å¤šæ ·åŒ–æ„é€ å‡½æ•°åŠææ„å‡½æ•°ï¼Œå¹¶å®Œæˆ ä»¥ä¸‹åŠŸèƒ½å‡½æ•°
+*1ï¼ç”¨ä¸‹é¢çš„æ ¼å¼è¾“å‡ºæ—¥æœŸï¼š æ—¥ / æœˆ / å¹´
+*2ï¼ å¯è¿è¡Œåœ¨å½“å‰æ—¥ä¸ŠåŠ ä¸€å¤©æ“ä½œ
+*3ï¼ è®¾ç½®æ—¥æœŸã€‚
 */
 #include <iostream>
 #include <iomanip>
@@ -11,15 +11,16 @@ class Date {
 private:
 	int day, month, year;
 public:
-	//ÉùÃ÷Çø
+	//å£°æ˜åŒº
 	Date(int t_day = 9, int t_month = 9, int t_year = 2000);
 	Date(Date &t_date);
 	void show();
 	Date operator++();
 	Date operator++(int);
+	void setDay(int t_day, int t_month, int t_year);
 	~Date();
 };
-//¶¨ÒåÇø
+//å®šä¹‰åŒº
 Date::Date(int t_day, int t_month, int t_year) :
 	day(t_day), month(t_month), year(t_year) {}
 Date::Date(Date &t_date) {
@@ -28,7 +29,7 @@ Date::Date(Date &t_date) {
 	year = t_date.year;
 }
 void Date::show() {
-	cout << "ÈÕÆÚÎª£º";
+	cout << "æ—¥æœŸä¸ºï¼š";
 	cout.width(2);
 	cout << setfill('0') << day << "/";
 	cout.width(2);
@@ -114,6 +115,11 @@ Date Date::operator++(int) {
 	++(*this);
 	return date;
 }
+void Date::setDay(int t_day, int t_month, int t_year) {
+	day = t_day;
+	month = t_month;
+	year = t_year;
+}
 Date::~Date() {}
 int main() {
 	Date day1;
@@ -122,9 +128,11 @@ int main() {
 	day2++;
 	day2.show();
 	Date day3(28, 2, 1999);
-	(++day3).show();		
+	(++day3).show();
 	Date day4(28, 2, 1999);
 	(day4++).show();
+	day4.setDay(28, 12, 2018);
+	day4.show();
 	system("pause");
 	return 0;
 }
@@ -137,8 +145,8 @@ int main() {
 // 
 //
 //
-//Ìí¼Ó¸üÉîÒ»¼¶Àí½â
-//¹À¼ÆÓĞºÜ¶àbug£¬´úÂë»¹Î´ÓÅ»¯
+//æ·»åŠ æ›´æ·±ä¸€çº§ç†è§£
+//ä¼°è®¡æœ‰å¾ˆå¤šbugï¼Œä»£ç è¿˜æœªä¼˜åŒ–
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -146,7 +154,7 @@ class Date {
 private:
 	int day, month, year;
 public:
-	//ÉùÃ÷Çø
+	//å£°æ˜åŒº
 	Date(int t_day = 9, int t_month = 9, int t_year = 2000);
 	Date(Date &t_date);
 	void show();
@@ -156,7 +164,7 @@ public:
 	friend Date operator+ (const Date& t_day1, const int& t_day2);
 	~Date();
 };
-//¶¨ÒåÇø
+//å®šä¹‰åŒº
 Date::Date(int t_day, int t_month, int t_year) :
 	day(t_day), month(t_month), year(t_year) {}
 Date::Date(Date &t_date) {
@@ -165,7 +173,7 @@ Date::Date(Date &t_date) {
 	year = t_date.year;
 }
 void Date::show() {
-	cout << "ÈÕÆÚÎª£º";
+	cout << "æ—¥æœŸä¸ºï¼š";
 	cout.width(2);
 	cout << setfill('0') << day << "/";
 	cout.width(2);
