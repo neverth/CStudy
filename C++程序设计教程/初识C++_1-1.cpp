@@ -1,4 +1,4 @@
-//第一个c++程序
+//绗竴鐨刢++绋嬪簭
 #include <iostream>
 using namespace std;
 int main() {

@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 	int num1 = 100;
 	const int *p = &num;
-	int *p2 = const_cast<int*>(p1);//½«³£Á¿Ö¸Õëp1È¥µôconstÊôĞÔ
+	int *p2 = const_cast<int*>(p1);//å°†å¸¸é‡æŒ‡é’ˆp1å»æ‰constå±æ€§
 	*p2 = 200;
 	cout << "num = " << num << endl;
 	system("pause");

@@ -1,4 +1,4 @@
-//cinºÍcout
+//cinå’Œcout
 #include <iostream>
 using namespace std;
 int main() {

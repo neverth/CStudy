@@ -1,4 +1,4 @@
-//C++ÖÐµÄ×Ö·û´®¡ª¡ªstring
+//C++ä¸­çš„å­—ç¬¦ä¸²â€”â€”string
 #include <iostream>
 #include <string>
 using namespace std;
