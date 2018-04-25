@@ -16,9 +16,27 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-//递归实现函数
-int TwoPointSearch_recursion() {
-	return 0;
+//递归实现函数,推荐使用非递归的方式，因为递归每次调用递归时有用堆栈保存函数数据和结果。能用循环的尽量不用递归。
+int TwoPointSearch_recursion(vector<int> &t_nums, int target) {
+	auto beg = t_nums.begin();//初始化
+	auto end = t_nums.end();//初始化
+	auto mid = t_nums.begin() + (end - beg) / 2;//初始化话中间点
+	vector<int> t_nums1;//中间向量
+	if (target == *mid)
+		return *mid;
+	if (target < *mid){ 
+		end = mid; 
+		//向中间容器赋值
+		for (; beg < end; ++beg)
+			t_nums1.push_back(*beg);
+		return TwoPointSearch_recursion(t_nums1, target);
+	}
+	else {
+		beg = mid + 1;
+		for (; beg < end; ++beg)
+			t_nums1.push_back(*beg);
+		return TwoPointSearch_recursion(t_nums1, target);
+	}		
 }
 //循环实现函数
 int TwoPointSearch_loop(vector<int> &t_nums, int target) {
@@ -43,6 +61,7 @@ int main() {
 	//循环实现调用
 	cout << nums[TwoPointSearch_loop(nums, 1)] << endl;
 	//递归实现调用
+	cout << TwoPointSearch_recursion(nums, 19);
 	system("pause");
 	return 0;
 }
